@@ -1,3 +1,29 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <aside class="panel panel-default">
+        <div class="panel-heading"><h4>{{'title.new.bingo'}}</h4></div>
+        <div class="panel-body">
+          <button class="btn btn-default">{{'button.new.bingo'}}</button>
+        </div>
+        <div class="panel-heading"><h4>{{'title.load.bingo'}}</h4></div>
+        <div class="panel-body">
+          <input type="text" name="bingo.code">
+        </div>
+        <div class="panel-heading"><h4>{{'edit.panel'}}</h4></div>
+        <div class="panel-body">
+          <h5>{{'bingo.grid.size'}}</h5>
+          <button class="btn btn-default" (click)="setSize(3)">3x3</button>
+          <button class="btn btn-default" (click)="setSize(5)">5x5</button>
+          <button class="btn btn-default" (click)="setSize(7)">7x7</button>
+          <h5>{{'bingo.grid.title'}}</h5>
+          <input type="text" name="bingo.title">
+        </div>
+        <div class="panel-footer">{{'text.bingo.valid'}}</div>
+      </aside>
+    </div>
+    <div class="col-md-7">
+      <app-bingo-box #card></app-bingo-box>
+    </div>
+  </div>
+</div>

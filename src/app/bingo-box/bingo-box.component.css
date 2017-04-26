@@ -1,0 +1,32 @@
+.bingo-cell {
+  background-color: #427388;
+  margin: 10px;
+  display: inline-block;
+}
+
+.bingo-card{
+  background-color: #80c8ef;
+  width: 900px;
+}
+.bingo-row{
+  background-color: #ff7986;
+  text-align: center;
+}
+.bingo-cell:hover{
+  cursor: pointer;
+}
+
+.sm{
+  width: 100px;
+  height: 100px;
+}
+
+.md {
+  width: 150px;
+  height: 150px;
+}
+
+.lg{
+  width: 200px;
+  height: 200px;
+}
