@@ -8,6 +8,7 @@ import {Component, ViewChild} from '@angular/core';
 export class AppComponent {
 
   @ViewChild('card') bingoCard;
+  inputTitle = 'bingo.default.title';
 
   constructor(){
 
@@ -16,5 +17,10 @@ export class AppComponent {
   setSize(number){
     this.bingoCard.gridLenght = number;
     this.bingoCard.build();
+  }
+
+  setTitle(){
+    console.log(this.inputTitle);
+    this.bingoCard.title = this.inputTitle;
   }
 }

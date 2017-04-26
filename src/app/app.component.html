@@ -17,7 +17,7 @@
           <button class="btn btn-default" (click)="setSize(5)">5x5</button>
           <button class="btn btn-default" (click)="setSize(7)">7x7</button>
           <h5>{{'bingo.grid.title'}}</h5>
-          <input type="text" name="bingo.title">
+          <input type="text" name="bingo.title" [(ngModel)]="inputTitle" (keyup)="setTitle()">
         </div>
         <div class="panel-footer">{{'text.bingo.valid'}}</div>
       </aside>

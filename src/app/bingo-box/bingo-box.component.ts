@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class BingoBoxComponent implements OnInit {
 
-  title : string = 'bingo.title';
+  title : string = 'bingo.default.title';
   gridLenght : number = 5;
   grid : any[] = [];
 
@@ -20,6 +20,7 @@ export class BingoBoxComponent implements OnInit {
   }
 
   build(){
+    console.log('building');
     this.grid = [];
     for(let i=0; i < this.gridLenght ; i++){
       let line = Array(this.gridLenght).fill(new Cell());

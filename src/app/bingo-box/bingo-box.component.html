@@ -4,9 +4,7 @@
   </div>
   <div class="bingo-content">
     <div class="bingo-row" *ngFor="let row of grid; let i = index">
-      <div class="bingo-cell" [ngClass]="{'sm':gridLenght === 7,'lg':gridLenght === 3,'md':gridLenght === 5}" *ngFor="let cell of row">
-
-      </div>
+      <div class="bingo-cell" [ngClass]="{'sm':gridLenght === 7,'lg':gridLenght === 3,'md':gridLenght === 5}" *ngFor="let cell of row">{{cell.content}}</div>
     </div>
   </div>
 </div>
